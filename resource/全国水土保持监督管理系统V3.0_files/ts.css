@@ -1,0 +1,99 @@
+/* 提示框/回显框样式 */
+@charset "utf-8";
+	/* 提示框 */
+	.hide{
+		width: 350px;
+		height: 200px;
+		position: absolute;
+		border: 3px solid #ccc;
+		background: #fff;
+		display: none;
+		z-index:1;
+	}
+	/* 提示框标题 */
+	.hide_tittle{
+		position: absolute;
+		left: 5px;
+		top: 3px;
+		font-size: 16px;
+		font-weight: bolder;
+		color: #000; 
+	}
+	/* 提示框右上角按钮 */
+	#off{
+		position: absolute;
+		right: 7px;
+		top: 7px;
+
+	}
+	/* 提示框中内容 */
+	.hide_content{
+		position: absolute;
+		left: 0px;
+		top:75px;
+		width: 350px;
+		text-align: center;
+		font-size: 16px;
+		color: #000; 
+	}
+	/* 提示框按钮 */
+	.hide_button{
+		position: absolute;
+		right: 7px;
+		bottom: 7px;
+	}
+	/* 提示框按钮中字的样式 */
+	.list_td .hide .hide_button>a{
+		margin-right: 7px;
+		height: 30px;
+   		line-height: 30px;
+		display: inline-block;
+		padding: 0 10px;
+		font-size: 16px;
+		background: #64ABF5;
+		color:#fff;
+		text-decoration:none;
+	}
+	/* 提示框按钮中字鼠标滑过的样式 */
+	.list_td .hide .hide_button>a:hover{
+	  	background:#0077F1; 
+
+	}
+	/*回显框按钮中字的样式 */
+	.hidee .hide_button>a{
+		margin-right: 7px;
+		display: inline-block;
+		height: 30px;
+   		line-height: 30px;
+		padding: 0 10px;
+		font-size: 16px;
+		background: #64ABF5;
+		color:#fff;
+		text-decoration:none;
+	}
+	/*回显框按钮中字鼠标滑过的样式 */
+	.hidee .hide_button>a:hover{
+	  	background:#0077F1; 
+
+	}
+	/* 遮罩层样式 */
+	#floats,.floats{position:fixed;
+			top:0;
+			left:0;
+			 width:100%; 
+			 height:100%; 
+			 background:#0077F1; 
+			opacity:0.1;
+			filter:alpha(opacity=10);
+			display: none;
+	}
+	/* 二次回显框样式 */
+	.hidee{
+		width: 350px;
+		height: 200px;
+		position: absolute;
+		border: 3px solid #ccc;
+		background: #fff;
+		display: none;
+		z-index:1;
+	}

@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0050)http://sbjd.mwr.gov.cn/supervise/user_login.action -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>全国水土保持监督管理系统V3.0</title>
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="./全国水土保持监督管理系统V3.0_files/chosen.css">
+<link type="text/css" rel="stylesheet" href="./全国水土保持监督管理系统V3.0_files/jquery-ui.min.css">
+
+
+
+
+<link rel="stylesheet" href="./全国水土保持监督管理系统V3.0_files/ol.css" type="text/css">        
+<link rel="stylesheet" href="./全国水土保持监督管理系统V3.0_files/layerswitcher.css" type="text/css">
+
+<style>
+        /* round corners of layer switcher, and make it transparent */
+        .olControlLayerSwitcher .layersDiv {
+            border-radius: 10px 0 0 10px;
+            opacity: 0.75;
+            filter: alpha(opacity=75);
+        }
+        </style>
+
+
+
+
+
+
+
+
+<script src="./全国水土保持监督管理系统V3.0_files/WdatePicker.js"></script><link href="./全国水土保持监督管理系统V3.0_files/WdatePicker.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+var gisHost='http://10.1.193.10:8081',proxy='/supervise/proxy.jsp?',jgurl='http://10.1.63.91:39999';
+</script>
+<script src="./全国水土保持监督管理系统V3.0_files/commonTools.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/zh-cn.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/jquery-1.8.3.min.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/jquery.form.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="./全国水土保持监督管理系统V3.0_files/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="./全国水土保持监督管理系统V3.0_files/windowTools.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/dictionary.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/jquery-ui.min.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/formValidator.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/formValidatorRegex.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/FusionCharts.js"></script><style type="text/css" media="screen">object.FusionCharts:focus, embed.FusionCharts:focus {outline: none}</style>
+<script src="./全国水土保持监督管理系统V3.0_files/ts.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/menu.js"></script>
+
+
+
+
+<script type="text/javascript" src="./全国水土保持监督管理系统V3.0_files/proj4.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/ol.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/layerswitcher.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/ol.source.dt1.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/tdt.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/MapUtils.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/initial.js"></script>
+
+<script src="./全国水土保持监督管理系统V3.0_files/core-min.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/cipher-core-min.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/mode-ecb-min.js"></script>
+<script src="./全国水土保持监督管理系统V3.0_files/tripledes.js"></script>
+<link rel="stylesheet" type="text/css" href="./全国水土保持监督管理系统V3.0_files/easyui.css">
+<link rel="stylesheet" type="text/css" href="./全国水土保持监督管理系统V3.0_files/icon.css">
+<link rel="stylesheet" type="text/css" href="./全国水土保持监督管理系统V3.0_files/demo.css">
+<link type="text/css" rel="stylesheet" href="./全国水土保持监督管理系统V3.0_files/WdatePicker.css">
+<link type="text/css" rel="stylesheet" href="./全国水土保持监督管理系统V3.0_files/style.css">
+<link type="text/css" rel="stylesheet" href="./全国水土保持监督管理系统V3.0_files/ts.css">
+<link rel="stylesheet" type="text/css" href="./全国水土保持监督管理系统V3.0_files/easydropdown.css">
+
+
+
+
+<script src="./全国水土保持监督管理系统V3.0_files/jquery.easydropdown.js"></script>
+<script type="text/javascript">
+	$(function(){	  
+			if(null != "" && "" != ""){
+				//点击删除显示提示框公用方法
+					var win =  window.parent ? window.parent : window;
+					var _h = "";
+					var _w="";
+					var scrollTop="";
+					try{
+						 _h = win.screen.availHeight;
+						 _w=$(window).width();
+						 scrollTop=$(win).scrollTop();
+						 if(scrollTop==0){
+							 $(".hidee").css({top:(_h - $(".hidee").height())/2  - 124,left:(_w-$(".hidee").width())/2}); 	
+						 }else{
+							 $(".hidee").css({top:(_h -$(".hidee").height()+scrollTop)/2,left:(_w-$(".hidee").width())/2}); 	
+						 } 
+					}
+					catch(err){
+						 var tableHeight =  $("table").height();
+						 var tableWidth = $("table").width();
+						 _h = window.screen.availHeight;
+						 _w=window.screen.availWidth;
+						 scrollTop=$(window).scrollTop();
+						 if(tableHeight>400){
+							 var divHeight = (tableHeight-$(".hidee").height())/2;
+						 }else{
+							 var divHeight = tableHeight;
+						 }
+						 $(".hidee").css({top:(divHeight - $(".hidee").height()+scrollTop)/2,left:(tableWidth-$(".hidee").width())/2});
+					}
+				$("#floats").show();
+				$(".hidee").show();
+			}
+		});
+</script>
+
+<script type="text/javascript">
+function updatepwd(){
+	var userid = '21';
+	var userpwd = '5d93ceb70e2bf5daa84ec3d0cd2c731a';
+	if(userid=="" || userid ==null){
+		window.location.href='/supervise/login.jsp'; 
+	}else{
+		window.open("/supervise/usertoUpdatePwb.action?userid_c="+userid);
+	}
+	/* $.ajax({
+        type:"POST",
+        url:"/supervise/userif_uid.action",
+        dataType:"json",
+        cache : true,
+        async: true,
+        data : {
+             "userid_c": userid
+        },
+        success:function(json){
+        	if(json.message!=""){
+        		window.open("/supervise/usertoUpdatePwb.action?userid_c="+userid,"修改密码页面","width=600,height=600,top=100,left=300,scrollbars=no,toolbar=no,location=no");
+        	}else{
+        		window.location.href='/supervise/user_login.action'; 
+        	}
+        }
+    }); */
+}
+</script>
+</head>
+<body style="min-width:1100px;">
+<!--头部-->
+<div id="indexXf" style="width:100%;position:fixed;top:0">
+<div class="top">
+<div class="top_content">
+
+<div class="tc_logo">全国水土保持监督管理系统V3.0<span></span></div>
+
+
+<div class="tc_text">
+<div class="tct_yh" style="cursor:default;width:200px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis" title="王刚">用户名：
+王刚
+</div>
+<div class="tct_an"><a href="http://sbjd.mwr.gov.cn/supervise/user_logout.action" target="_top">退出</a></div>
+<div class="tct_xg"><a href="http://sbjd.mwr.gov.cn/supervise/user_login.action#" onclick="updatepwd();">修改密码</a></div>
+</div>
+</div>
+</div>
+<!--导航开始-->
+<div id="top_bg">
+		<div class="nav_z">
+			<ul id="navul" class="cl">
+				
+					<li class="">
+						<a href="http://sbjd.mwr.gov.cn/supervise/homePage!toIndex.action">首&nbsp;&nbsp;页</a>
+					</li>
+				
+				
+					<li class="">
+						<a href="http://sbjd.mwr.gov.cn/supervise/user_login.action#">方案管理</a>
+						<ul>
+								
+								<li><a href="http://sbjd.mwr.gov.cn/supervise/taSPcp!toFASLList.action" target="mainframe">方案受理</a></li>
+							
+							
+								<li><a href="http://sbjd.mwr.gov.cn/supervise/taSPcp!toList.action" target="mainframe">方案录入</a></li>
+							
+							
+								<li><a href="http://sbjd.mwr.gov.cn/supervise/taSSwcptr!toList.action" target="mainframe">技术审查</a></li>
+							
+							
+								<li><a href="http://sbjd.mwr.gov.cn/supervise/taSSwcpa!toList.action" target="mainframe">方案批复</a></li>
+		                       
+		                   
+		                        <li><a href="http://sbjd.mwr.gov.cn/supervise/taSPcpalter!toList.action" target="mainframe">项目变更</a></li>
+		                    
+						</ul>
+					</li>
+				
+				
+					
+						<li class="">
+							<a href="http://sbjd.mwr.gov.cn/supervise/taSSwcsi!toList.action" target="mainframe">监督检查</a>
+						</li>
+					
+				
+				
+				
+					<li class="">
+						<a href="http://sbjd.mwr.gov.cn/supervise/user_login.action#">监测监理</a>
+						<ul>
+							
+								<li><a href="http://sbjd.mwr.gov.cn/supervise/taSP!toList.action" target="mainframe">建设信息</a></li>
+							
+							
+								<li><a href="http://sbjd.mwr.gov.cn/supervise/taSM!toList.action" target="mainframe">监测信息</a></li>
+							
+							
+								<li><a href="http://sbjd.mwr.gov.cn/supervise/taSWach!toList.action" target="mainframe">监理信息</a></li>
+							
+						</ul>
+					</li>
+				
+				
+					<li class="">
+						<a href="http://sbjd.mwr.gov.cn/supervise/user_login.action#">设施验收</a>
+						<ul>
+						
+							<li><a href="http://sbjd.mwr.gov.cn/supervise/taSA!toList.action" target="mainframe">技术评估</a></li>
+						
+						
+							<li><a href="http://sbjd.mwr.gov.cn/supervise/taSAfca!toList.action" target="mainframe">行政验收</a></li>
+						
+						</ul>
+					</li>
+				
+				
+					
+						<li class="">
+							<a href="http://sbjd.mwr.gov.cn/supervise/taSSwcfcfc!toList.action" target="mainframe">补偿费征收</a>
+						</li>
+					
+				
+				
+				
+					<li class="">
+						<a href="http://sbjd.mwr.gov.cn/supervise/user_login.action#">行政执法</a>
+						<ul>
+						
+							<li><a href="http://sbjd.mwr.gov.cn/supervise/taSAlear!toList.action" target="mainframe">行政复议</a></li>
+						
+						
+							<li><a href="http://sbjd.mwr.gov.cn/supervise/taSAlepr!toList.action" target="mainframe">检举举报</a></li>
+						
+						
+	                        <li><a href="http://sbjd.mwr.gov.cn/supervise/taSAlepc!toList.action" target="mainframe">立案查处</a></li>
+	                     
+	                        
+	                        <li><a href="http://sbjd.mwr.gov.cn/supervise/taSAlerc!toList.action" target="mainframe">应诉案件</a></li>
+	                       
+						</ul>
+					</li>
+				
+				
+					<li class="">
+						<a href="http://sbjd.mwr.gov.cn/supervise/user_login.action#">查询统计</a>
+						<ul>
+						
+							<li><a href="http://sbjd.mwr.gov.cn/supervise/statSearch!search.action?flag=1&amp;statiscsSearch.NBprojgrade=&amp;statiscsSearch.NCitedidadmincobj=&amp;PrCitCountName=" target="mainframe">综合查询</a></li>
+						
+						
+	                        <li><a href="http://sbjd.mwr.gov.cn/supervise/toComStat!toStat.action?comType=1" target="mainframe">综合统计</a></li>
+	                     
+						</ul>
+					</li>
+				
+				
+					<li class="bannerYs">
+						<a href="http://sbjd.mwr.gov.cn/supervise/homePage!toMorePages.action" target="mainframe">更多</a>
+					</li>
+				
+				<!--可在此处直接添加导航-->
+			</ul>
+		</div>
+		<!--导航结束-->		
+</div>
+</div>
+
+<!--查询部分-->
+<iframe width="100%" onload="Javascript:SetWinHeight(this)" name="mainframe" id="mainframe" style="margin-top:124px;" src="./全国水土保持监督管理系统V3.0_files/homePage!toCenter.html" frameborder="0" scrolling="no" height="590"></iframe>
+<script type="text/javascript" language="javascript"> 
+	var publicHeight = "780";
+	function SetWinHeight(obj) {
+		var cwin=obj;
+		var iframeWindow = document.getElementById("mainframe").contentWindow;
+		try{
+			if(cwin.contentDocument == null){
+				cwin.height = publicHeight;
+			}
+			if(cwin&&!window.opera){
+				if(cwin.contentDocument&&cwin.contentDocument.body.offsetHeight){
+					cwin.height=cwin.contentDocument.body.offsetHeight+20;
+					/* if(cwin.height<700){
+						cwin.height=700;
+					} */
+				}else if(cwin.Document&&cwin.Document.body.scrollHeight){
+					cwin.height=cwin.Document.body.scrollHeight+10;
+					/* if(cwin.height<700){
+						cwin.height=700;
+					} */
+				}
+			}else{
+				if(cwin.contentWindow.document&&cwin.contentWindow.document.body.scrollHeight){
+					cwin.height=cwin.contentWindow.document.body.scrollHeight;
+					/* if(cwin.height<700){
+						cwin.height=700;
+					} */
+				}
+			} 
+		}catch(err){
+			cwin.height = publicHeight;
+			return false;
+		}
+	} 
+	
+	function getIFrameDOM(id){
+		return document.getElementById(id) || document.frames[id].document;
+	}
+	
+	var getHeight = function(value){
+		publicHeight = value;
+	};
+</script> 
+<div class="footer">
+版权所有：水利部水土保持监测中心&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：北京地拓科技发展有限公司
+</div>
+
+
+
+</body></html>

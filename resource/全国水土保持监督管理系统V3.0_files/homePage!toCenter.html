@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0060)http://sbjd.mwr.gov.cn/supervise/homePage!toMorePages.action -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>更多</title>
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="./chosen.css">
+<link type="text/css" rel="stylesheet" href="./jquery-ui.min.css">
+
+
+
+
+<link rel="stylesheet" href="./ol.css" type="text/css">        
+<link rel="stylesheet" href="./layerswitcher.css" type="text/css">
+
+<style>
+        /* round corners of layer switcher, and make it transparent */
+        .olControlLayerSwitcher .layersDiv {
+            border-radius: 10px 0 0 10px;
+            opacity: 0.75;
+            filter: alpha(opacity=75);
+        }
+        </style>
+
+
+
+
+
+
+
+
+<script src="./WdatePicker.js"></script><link href="./WdatePicker.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+var gisHost='http://10.1.193.10:8081',proxy='/supervise/proxy.jsp?',jgurl='http://10.1.63.91:39999';
+</script>
+<script src="./commonTools.js"></script>
+<script src="./zh-cn.js"></script>
+<script src="./jquery-1.8.3.min.js"></script>
+<script src="./jquery.form.js"></script>
+<script src="./chosen.jquery.min.js"></script>
+<script type="text/javascript" src="./jquery.easyui.min.js"></script>
+<script type="text/javascript" src="./windowTools.js"></script>
+<script src="./dictionary.js"></script>
+<script src="./jquery-ui.min.js"></script>
+<script src="./formValidator.js"></script>
+<script src="./formValidatorRegex.js"></script>
+<script src="./FusionCharts.js"></script><style type="text/css" media="screen">object.FusionCharts:focus, embed.FusionCharts:focus {outline: none}</style>
+<script src="./ts.js"></script>
+<script src="./menu.js"></script>
+
+
+
+
+<script type="text/javascript" src="./proj4.js"></script>
+<script src="./ol.js"></script>
+<script src="./layerswitcher.js"></script>
+<script src="./ol.source.dt1.js"></script>
+<script src="./tdt.js"></script>
+<script src="./MapUtils.js"></script>
+<script src="./initial.js"></script>
+
+<script src="./core-min.js"></script>
+<script src="./cipher-core-min.js"></script>
+<script src="./mode-ecb-min.js"></script>
+<script src="./tripledes.js"></script>
+<link rel="stylesheet" type="text/css" href="./easyui.css">
+<link rel="stylesheet" type="text/css" href="./icon.css">
+<link rel="stylesheet" type="text/css" href="./demo.css">
+<link type="text/css" rel="stylesheet" href="./WdatePicker.css">
+<link type="text/css" rel="stylesheet" href="./style.css">
+<link type="text/css" rel="stylesheet" href="./ts.css">
+<link rel="stylesheet" type="text/css" href="./easydropdown.css">
+
+
+
+
+<script src="./jquery.easydropdown.js"></script>
+<script type="text/javascript">
+	$(function(){	  
+			if(null != "" && "" != ""){
+				//点击删除显示提示框公用方法
+					var win =  window.parent ? window.parent : window;
+					var _h = "";
+					var _w="";
+					var scrollTop="";
+					try{
+						 _h = win.screen.availHeight;
+						 _w=$(window).width();
+						 scrollTop=$(win).scrollTop();
+						 if(scrollTop==0){
+							 $(".hidee").css({top:(_h - $(".hidee").height())/2  - 124,left:(_w-$(".hidee").width())/2}); 	
+						 }else{
+							 $(".hidee").css({top:(_h -$(".hidee").height()+scrollTop)/2,left:(_w-$(".hidee").width())/2}); 	
+						 } 
+					}
+					catch(err){
+						 var tableHeight =  $("table").height();
+						 var tableWidth = $("table").width();
+						 _h = window.screen.availHeight;
+						 _w=window.screen.availWidth;
+						 scrollTop=$(window).scrollTop();
+						 if(tableHeight>400){
+							 var divHeight = (tableHeight-$(".hidee").height())/2;
+						 }else{
+							 var divHeight = tableHeight;
+						 }
+						 $(".hidee").css({top:(divHeight - $(".hidee").height()+scrollTop)/2,left:(tableWidth-$(".hidee").width())/2});
+					}
+				$("#floats").show();
+				$(".hidee").show();
+			}
+		});
+</script>
+
+<style type="text/css">
+a{
+position:relative;
+display:block;
+}
+.zj{
+position:absolute;
+top:2px;
+left:0;
+background:#000;
+opacity:0.3;
+filter:alpha(opacity=30);
+display:none;
+}
+</style>
+<script type="text/javascript" language="javascript"> 
+
+	var getHeight = function(value){
+		switch(value){
+			case "fabzdw":
+				parent.publicHeight = 1230;
+				break;
+			case "jcdw":
+				parent.publicHeight = 1230;
+				break;
+			case "jldw":
+				parent.publicHeight = 1230;
+				break;
+			case "zdfzqgj":
+				parent.publicHeight = 1230;
+				break;
+			case "zcfggj":
+				parent.publicHeight = 1230;
+				break;
+			case "zcfgly":
+				parent.publicHeight = 1230;
+				break;
+			case "zcfgdf":
+				parent.publicHeight = 1230;
+				break;
+			case "zjk":
+				parent.publicHeight = 830;
+				break;
+			default:
+				parent.publicHeight = 800;
+				break;
+		}
+	};
+
+	 $(function(){
+		//更多页面高度自适应
+		var moreBox=document.getElementById("moreBox");
+		var moreBoxHeight=parent.document.documentElement.clientHeight-219;
+		$(moreBox).css('height',moreBoxHeight);
+		
+		//IE7下更多页面高度自适应
+		if(navigator.userAgent.indexOf('MSIE')>0){
+			if(navigator.userAgent.indexOf("MSIE 7.0")>0){
+				var moreBox=document.getElementById("moreBox");
+				var moreBoxHeight=parent.document.documentElement.clientHeight-210;
+				$(moreBox).css('height',moreBoxHeight);
+			}
+		}
+		
+		
+		//鼠标划过效果
+		$('#moreBox').find('a').each(function(){
+			$(this).hover(function(){
+				$(this).find('.zj').show();
+			},function(){
+				$(this).find('.zj').hide();
+			})
+		})
+	 });
+	  
+	
+</script> 
+</head>
+
+<body>
+	<div id="moreBox" class="comprehensive" style="min-height: 471px; height: 379px;">
+	<div class="more_pages">
+		<div class="more_pages_l">
+			<h1>专项工作</h1>
+			<a href="javascript:getHeight();(window.location.href=&#39;http://10.1.193.10/publicModule/tvBMmd!toList.action?tvBMmd.NIdcategory=8&amp;sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))"><div class="zj" style="width: 235px; height: 78px; display: none;"></div><img src="./zhuanxiangxingdong.png"></a>
+			<a href="http://sbjd.mwr.gov.cn/supervise/taSNljs!toList.action"><div class="zj" style="width: 235px; height: 78px; display: none;"></div><img src="./nenglijianshe.png"></a>
+			<h1>生态文明建设</h1>
+
+			<a href="http://sbjd.mwr.gov.cn/supervise/productProject!toList.action"><div class="zj" style="width:235px;height:78px;"></div><img src="./shengtaiwenminggongcheng.png"></a>
+			<a href="http://sbjd.mwr.gov.cn/supervise/taSEcc!toList.action"><div class="zj" style="width: 235px; height: 78px; display: none;"></div><img src="./shengtaiwenmingchengshi.png"></a>
+		</div>
+		<div class="more_pages_l" style="margin-left:20px;">
+			<h1>综合事务</h1>
+			<a href="http://sbjd.mwr.gov.cn/supervise/tiAdmin!toList.action" style="float:left;"><div class="zj" style="width: 117px; height: 78px; display: none;"></div><img src="./jiandujigouguanli.png"></a>
+			<a href="http://sbjd.mwr.gov.cn/supervise/taZZthy!toList.action" style="float:left;margin-left:2px;"><div class="zj" style="width: 116px; height: 78px; display: none;"></div><img src="./zhuantihuiyi.png"></a>
+			<a href="http://sbjd.mwr.gov.cn/supervise/taBWs!toList.action" class="clear"><div class="zj" style="width: 235px; height: 78px; display: none;"></div><img src="./niandugongzuozongjie.png"></a>
+			<a href="http://sbjd.mwr.gov.cn/supervise/taBIts!toList.action" style="float:left;"><div class="zj" style="width:117px;height:117px;"></div><img src="./jishubiaozhuntixi.png"></a>
+			<a href="http://sbjd.mwr.gov.cn/supervise/annualReport!toList.action" style="float:left;margin-left:2px;"><div class="zj" style="width: 116px; height: 159px; display: none;"></div><img src="./niandugongzuobaogao.png"></a>
+			<a href="javascript:getHeight();(window.location.href=&#39;http://10.1.193.10/publicModule/tvBMmd!toList.action?tvBMmd.NIdcategory=4&amp;sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:left;margin-top:-42px;"><div class="zj" style="width: 117px; height: 89px; display: none;"></div><img src="./wenxianziliao.png"></a>
+			<a href="http://sbjd.mwr.gov.cn/supervise/taSZywj!toList.action" style="float:right;"><div class="zj" style="width: 116px; height: 47px; display: none;"></div><img src="./zhongyaowenjian.png"></a>
+		</div>
+		<div class="more_pages_l" style="margin-left:20px;">
+			<h1>技术支撑</h1>
+			<a href="javascript:getHeight(&#39;fabzdw&#39;);(window.location.href=&#39;http://10.1.193.10/publicModule/tiEdittitle!toList.action?sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:left;"><div class="zj" style="width: 142px; height: 209px; display: none;"></div><img src="./fanganbianzhidanwei.png"></a>
+			<a href="javascript:getHeight(&#39;jcdw&#39;);(window.location.href=&#39;http://10.1.193.10/publicModule/tiSupervise!toList.action?sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:left;margin-left:2px;"><div class="zj" style="width:91px;height:105px;"></div><img src="./jiancedanwei.png"></a>
+			<a href="javascript:getHeight(&#39;jldw&#39;);(window.location.href=&#39;http://10.1.193.10/publicModule/taSSpvu!toList.action?sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:left;margin-left:2px;"><div class="zj" style="width: 91px; height: 102px; display: none;"></div><img src="./jianlidanwei.png"></a>
+			<a href="javascript:getHeight();(window.location.href=&#39;http://10.1.193.10/publicModule/taSOrg!toList.action?taSOrg.COrty=2&amp;sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:left;"><div class="zj" style="width: 117px; height: 78px; display: none;"></div><img src="./yanshoupinggudanwei.png"></a>
+			<a href="javascript:getHeight(&#39;zjk&#39;);(window.location.href=&#39;http://10.1.193.10/publicModule/taBExpt!toList.action?sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:left;margin-left:2px;"><div class="zj" style="width: 116px; height: 78px; display: none;"></div><img src="./zhuanjiaku.png"></a>
+			<a href="javascript:getHeight();(window.location.href=&#39;http://10.1.193.10/publicModule/taSOrg!toList.action?taSOrg.COrty=4&amp;sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:left;"><div class="zj" style="width: 117px; height: 78px; display: none;"></div><img src="./chengshizhuanweihui.png"></a>
+			<a href="javascript:getHeight();(window.location.href=&#39;http://10.1.193.10/publicModule/taSOrg!toList.action?taSOrg.COrty=3&amp;sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:left;margin-left:2px;"><div class="zj" style="width: 116px; height: 78px; display: none;"></div><img src="./yufangjianduzhuanweihui.png"></a>
+		</div>
+		<div class="more_pages_l" style="margin-left:20px;">
+			<h1>重点防治区</h1>
+			<a href="javascript:getHeight(&#39;zdfzqgj&#39;);(window.location.href=&#39;http://10.1.193.10/publicModule/taSKcd!toList.action?sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:left;"><div class="zj" style="width:117px;height:78px;"></div><img src="./guojiaji.png"></a>
+			<a href="javascript:getHeight(&#39;zdfzq&#39;);(window.location.href=&#39;http://10.1.193.10/publicModule/taSKcdb!toList.action?taSKcdb.n_adminunitgrade=2&amp;sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:right;"><div class="zj" style="width:116px;height:78px;"></div><img src="./shengji.png"></a>
+			<a href="javascript:getHeight(&#39;zdfzq&#39;);(window.location.href=&#39;http://10.1.193.10/publicModule/taSKcdb!toList.action?taSKcdb.n_adminunitgrade=3&amp;sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:left;"><div class="zj" style="width:117px;height:78px;"></div><img src="./shiji.png"></a>
+			<a href="javascript:getHeight(&#39;zdfzq&#39;);(window.location.href=&#39;http://10.1.193.10/publicModule/taSKcdb!toList.action?taSKcdb.n_adminunitgrade=4&amp;sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:right;"><div class="zj" style="width:116px;height:78px;"></div><img src="./xianji.png"></a>
+			<div class="clear"></div>
+			<h1>政策法规</h1>
+			<a href="javascript:getHeight(&#39;zcfggj&#39;);(window.location.href=&#39;http://10.1.193.10/publicModule/policyRegulation!toList.action?policyRegulation.CLevel=0&amp;sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))"><div class="zj" style="width:235px;height:78px;"></div><img src="./guojia.png"></a>
+			<a href="javascript:getHeight(&#39;zcfgly&#39;);(window.location.href=&#39;http://10.1.193.10/publicModule/policyRegulation!toList.action?policyRegulation.CLevel=1&amp;sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:left;"><div class="zj" style="width: 117px; height: 78px; display: none;"></div><img src="./liuyu.png"></a>
+			<a href="javascript:getHeight(&#39;zcfgdf&#39;);(window.location.href=&#39;http://10.1.193.10/publicModule/policyRegulation!toList.action?policyRegulation.CLevel=2&amp;sysUser.userlevel=0&amp;sysUser.dataid=0&amp;mecode=&#39;+encryptX()+&#39;&amp;&#39;+Math.random(1000000))" style="float:right;"><div class="zj" style="width:116px;height:78px;"></div><img src="./difang.png"></a>
+		</div>
+	</div>
+	<div class="clear"></div>
+	</div>
+
+
+</body></html>

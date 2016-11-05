@@ -1,0 +1,418 @@
+@charset "utf-8";
+/*----------------------------------------------------------------------------------------------------------------*/
+/*******************************************************公共样式****************************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+body{margin:0;padding:0;font-family:simsun;font-size:15px;background:#fff;font-family:"微软雅黑";color:#FFFFFF;min-height:570px;}
+div,form,ul,ol,li,span,p,dl,table,tr,td,h1,h2,h3,h4,dd,dt{margin:0;padding:0;border:0;list-style:none;}
+a{text-decoration:none;font-family:"微软雅黑";color:#fff;}
+img{border:none;}
+input{outline:none;font-family:"微软雅黑";text-indent:3px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.clear{clear:both;}
+.p50{width:67px;}
+.p100{width:100px;}
+.p115{width:111px;}
+.p135{width:135px;}
+.p140{width:140px;}
+.p150{width:150px;}
+.p200{width:200px;}
+.p250{width:250px;}
+.p300{width:250px;}
+.p400{width:400px;}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/**************************************************文本输入框text样式************************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.text{height:28px;line-height:28px;border:1px solid #0077f1;padding:0 5px;}
+.imgSearch{background:#fff url(../images/search.png) no-repeat right;}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/***********************************************多行文本输入框textarea样式********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+textarea{border:1px solid #0077f1;resize:none;overflow:auto;font-size:12px;line-height: 26px;font-family:"微软雅黑"}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/**************************************************下拉列表select样式************************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.select{width:262px;height:30px;}
+.select100{width:100px;height:25px;}
+.select150{width:160px;height:25px;}
+.select200{width:212px;height:25px;}
+.select250{width:262px;height:25px;}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/****************************************************按钮button样式*************************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.btn{padding:0px 20px 0px 20px;height:35px;border:0;text-align:center;font-size:20px;font-family:"微软雅黑";color:#fff;margin-left:10px;background:#0077f1;}
+.add{background:#ff9325;}
+.add_little{padding:0px 10px 0px 10px;height:25px;font-size:16px;background:#ff9325;}
+.selBtn{display:inline-block;height:35px;line-height:35px;padding-left:40px;padding-right:40px;font-family: "微软雅黑";color: #fff;margin-right: 10px; background: #0077f1;}
+.search{background:#ff9325;}
+.reset{background:#0077f1;}
+.detail{background:#0077f1;}
+.detail_little{padding:0px 10px 0px 10px;height:25px;font-size:16px;background:#0077f1;}
+#hideProject{margin:5px;}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*****************************************************登录页面样式***************************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.login{width:1000px;height:400px;margin:0 auto 20px;position:relative;}
+.login_left{width:382px;float:left;padding-top:70px;}
+.login_left div img{margin-bottom:20px;}
+.login_left div a{color:#008eff;font-size:14px;text-decoration:underline;}
+.login_right{width:547px;height:357px;float:right;background:url(../images/login_bg.png) no-repeat;padding:55px 0 0 10px;}
+.login_content{font-size:14px;}
+.login_yhm{width:326px;height:52px;line-height:52px;border:0;background:url(../images/login_srk.png) no-repeat;padding:0 15px;color:#fff;font-size:16px;}
+.login_yzm{width:179px;background:url(../images/login_yz.png) no-repeat;padding:0 15px;}
+.login_dl{width:356px;height:52px;border:0;background:url(../images/login_dl.png) no-repeat;color:#fff;font-size:18px;font-family:"微软雅黑";}
+.login_copy{width:100%;height:70px;background:url(../images/login_bottom.png) no-repeat;-webkit-background-size:100% 100%;-o-background-size:100% 100%;position:absolute;bottom:0;}
+#usemiss{display:inline-block;padding: 10px 10px;background: #eee;color:#0077f1;opacity:0.7;filter:alpha(opacity=70);font-weight: bolder;}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*****************************************************首页top样式***************************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.top{width:100%;height:79px;margin:0 auto;background:url(../images/top.png) repeat;z-index:2;}
+.top_content{width:1000px;height:79px;margin:0 auto;}
+.tc_logo{width:540px;height:auto;float:left;font-size:28px;padding-top:20px;position: relative;}
+.tc_logo2{width:540px;height:auto;float:left;font-size:26px;padding-top:14px;position: relative;}
+.tc_logo2 span{position: absolute;font-size: 16px;bottom:-17px;right: 174px;}
+.tc_text{width:auto;height:79px;float:right;font-size:16px;line-height:79px;}
+.tct_yh{width:auto;height:79px;float:left;}
+.tct_an{width:86px;height:79px;float:left;text-align:center;margin:0 4px;}
+.tct_an a:hover{background:#0077f1;display:block;width:86px;height:79px;float:left;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#034d99,direction=120,strength=3);
+-webkit-box-shadow:0px 2px 3px #034d99;
+-moz-box-shadow:0px 2px 3px #034d99;
+box-shadow:0px 2px 3px #034d99 rgba(0.2);
+}
+.tct_xg{width:auto;height:79px;float:right;}
+.tct_xg a:hover{text-decoration:underline;}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/***************************************************首页菜单menu样式*************************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+#top_bg{height:45px;width:100%;background:url(../images/menu.png) repeat-x;z-index:2;left:0;margin-top:0px;}
+.nav_z{width:995px;height:45px;position:relative;z-index:2;margin:0 auto;padding-left:5px;}
+#navul li{float:left;width:110px;height:45px;position:relative;text-align:center;line-height:45px;font-size:15px;z-index:4;}
+#navul li a:link, #navul li a:visited{color:#3f3f3f;font-weight:500;letter-spacing:2px;text-decoration:none;}
+#navul li ul{display:none;position:absolute;z-index:2;background:#077bd0;left:0px;top:45px;padding-bottom:5px;}
+#navul li ul li{display:block;width:100px;padding:0 5px;float:none;height:38px;position:relative;line-height:38px;font-size:14px;overflow:hidden;}
+#navul li.navmoon{background:url(../images/menu_hg.png) repeat-x;width:110px;height:45px;line-height:45px;}
+#navul li.navmoon a{color:#fff;}
+#navul li.navhome a:hover{color:#fff;}
+#navul li.navmoon ul{display:block;}
+#navul li.navmoon ul a{display:block;width:100px;height:40px;line-height:40px;}
+#navul li.navmoon ul a:hover{color:#fff;background:#ff9325;}
+.bannerYs{background:url(../images/menu_hg.png) repeat-x;}
+.bannerYs a:link,.bannerYs a:visited{color:#fff !important;}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/***************************************************首页菜单底部样式*************************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.footer{width:100%;height:50px;background:url(../images/footer.png) repeat;font-size:14px;text-align:center;padding-top:25px;}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/**************************************************首页内容content样式***********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.banner{width:100%;margin:0 auto;position:relative;}
+.banner img{width:100%;height:420px;}
+.banner span{position:absolute;top:180px;right:260px;font-size:40px;}
+.index_content{width:100%;height:auto;padding-top:10px;background:url(../images/bg_1.png) repeat-x;}
+.index_c_nr{width:1000px;height:auto;margin:0 auto;}
+.index_c_nr_l{width:471px;height:auto;float:left;margin-top:10px;}
+.index_c_nr_l_t{width:471px;height:131px;background:url(../images/bg_2.png) no-repeat;padding-top:40px;position:relative;}
+.index_c_nr_l_t span{position:absolute;right:0;bottom:0;}
+.index_c_nr_l_t dl{width:97px;height:auto;margin:0px 0 0 35px;}
+.index_c_nr_l_t dl dt{width:97px;height:53px;margin:0;}
+.index_c_nr_l_t dl dt img{margin-left:15px;}
+.index_c_nr_l_t dl dd{width:97px;height:auto;margin:0;font-size:22px;text-align:center;padding-top:10px;font-weight:bold;}
+.index_c_nr_l_b{width:464px;height:150px;border-top:1px solid #d2d2d2;border-bottom:1px solid #d2d2d2;padding:15px 0;margin:15px 0 15px 7px;}
+.index_c_nr_l_b ul li{width:464px;height:24px;line-height:24px;position:relative;}
+.index_c_nr_l_b ul li span{position:absolute;right:0;top:0;color:#4b4b4b;font-size:12px;}
+.index_c_nr_l_b ul li a{color:#4b4b4b;font-size:14px;}
+.index_c_nr_l_b ul li a:hover{text-decoration:underline;color:#0077f1;}
+.float{margin-left:58px;}
+
+.index_qt{width:100%;height:auto;background:url(../images/bg_3.png) repeat-x;padding-top:80px;margin-top:30px;}
+.index_qt_l{width:250px;height:435px;float:left;background:url(../images/bg_4.png) no-repeat;}
+.index_qt_l_t{width:150px;height:auto;margin:0 auto;padding:60px 0 10px 0;}
+.index_qt_l_t dl dt img{margin-left:40px;}
+.index_qt_l_t dl dd{color:#006fbb;font-size:22px;text-align:center;padding-top:10px;font-weight:bold;}
+.index_qt_l_c{width:200px;height:auto;margin:0 auto;border:0;}
+.index_qt_l_c ul li{width:200px;height:35px;line-height:35px;}
+.index_qt_l_b{width:200px;height:auto;position:relative;margin:0 auto;}
+.index_qt_l_b span{position:absolute;right:0;top:0;}
+span a.indexBtn{display:block;float:left;padding:5px 10px;background:#0077f1;margin-right:5px;font-size:12px;}
+span a:hover.indexBtn{background:#ff9325;}
+
+.index_wxzl{width:1010px;height:auto;margin:0px auto;margin-top:20px;}
+.index_wxzl_t{width:1010px;height:78px;background:url(../images/bg_5.png) no-repeat;font-size:22px;text-align:center;line-height:78px;font-weight:bold;}
+.index_wxzl_nr{width:989px;height:auto;margin:18px auto;border-top:1px solid #d2d2d2;border-bottom:1px solid #d2d2d2;padding-bottom:20px;margin-bottom: 30px;}
+.index_wxzl_nr_pic{width:283px;height:auto;float:left;padding:84px 0 90px 190px;}
+.index_wxzl_nr_text{width:490px;height:auto;float:left;padding:33px 0 0 26px;position:relative;}
+/*新加*/
+.index_wxzl_nr_text ul{margin-top:20px;}
+.index_wxzl_nr_text ul li{width:490px;height:30px;line-height:30px;}
+.index_wxzl_nr_text ul li a{color:#4b4b4b;font-size:14px;}
+.index_wxzl_nr_text ul li a:hover{color:#0077f1;text-decoration:underline;}
+.index_wxzl_nr_text span{position:absolute;top:10px;right:0;font-size:12px;}
+.index_wxzl_jb{width:980px;height:auto;margin:0 auto;font-size:22px;color:#006fbb;font-weight:bold;position:relative;}
+.index_wxzl_jb span{font-size:12px;font-weight:normal;position:absolute;right:-4px;bottom:0;}
+.index_wxzl_jbnr{width: 1000px; height: auto; margin: 0 auto;padding: 30px 0 10px 0;}
+.index_wxzl_jbnr ul li{padding:0 10px;float:left;} 
+.index_wxzl_jbnr ul li a{display:inline-block;padding:5px 0;font-size:35px;background:#006fbb;width: 146px;text-align: center;}
+.index_wxzl_jbnr ul li a:hover{background:#ff9325;}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/************************************************各模块查询页面搜索栏样式**********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.list_banner{min-width:1000px;height:auto;background:url(../images/list_banner.png) repeat;margin-top:0px;z-index:-1;}
+.listb_content{width:1000px;height:auto;margin:0 auto;padding:30px 0;}
+.listbc_top{width:1000px;height:59px;background:url(../images/cx.png) no-repeat;font-size:22px;text-align:center;line-height:59px;position:relative;}
+.listbc_top span{position:absolute;top:0px;right:10px;font-size:14px;}
+
+.listbc_content{width:923px;height:auto;border:1px solid #d4d4d4;border-top:0;padding:2px 40px 60px 35px;position:relative;}
+.listbcc{overflow:auto;height:480px;border:1px solid #d4d4d4;}
+.listbcc_t{width:435px;height:20px;float:left;color:#3f3f3f;font-size:16px;margin:18px 0; }
+.listbcc_tt{width:880px;border:1px solid #0077f1;color:#3f3f3f;font-size:16px;float:left;margin:15px 0;line-height:26px;padding:20px;}
+.listbc_content span{position:absolute;bottom:-18px;right:15px;clear:both;}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/************************************************各模块查询页面列表样式***********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+
+table{border-collapse:collapse;}
+.list_content{width:1000px;height:auto;margin:30px auto;}
+.list_position{position:relative;}
+.list_content tbody tr:hover{background:#64abf5;border:1px solid #2d8ff3;}
+.list_tab{border-bottom:1px solid #d4d4d4;margin-top:-3px;}
+.list_bt{width:100%;height:45px;background:#0077f1;text-align:center;font-size:14px;}
+.list_td{border:1px solid #d4d4d4;text-align:center; line-height:30px;}
+.list_td img{margin:0 5px -5px 0;} 
+.list_td a{color:#4b4b4b;}
+.list_td a:hover{text-decoration:underline;color:#fff;}
+.first{border-left:1px solid #d4d4d4;}
+.list_nr{height:35px;background:#fafafa;color:#4b4b4b;}
+.list_bj{background:#e1edf9;}
+.warn{background:#ff9325;color:#fff;}/*提醒警示色*/
+#mapbtn1{position:absolute;right:0;top:0;}
+#mapbtn2{position:absolute;right:0;top:0;}
+#tjdw{margin:5px 0px 10px;}
+.Jdjc_xmm{height:30px;line-height:30px;width:272px;overflow:hidden;float:left;}
+#jdjc_xmmc_a:hover{color:#4b4b4b;text-decoration: none;cursor: text;}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*********************************************各模块查询页面列表分页空间样式*******************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+#pagelist{position:relative;width:100%;height:28px;margin:15px 0;}
+#pagelist ul{position:absolute;right:0px;top:0;}
+#pagelist ul li {float:left;height:28px;padding:0px 8px 0px 8px;margin-right:5px;border:1px solid #DDD;text-align:center;line-height:28px;text-decoration:none;font-size:14px;}
+#pagelist ul li a{color:#0033ff;}
+#pagelist ul li a:hover{background:#0077f1;color:#ffffff;}
+#pagelist .pageinfo {color:#3f3f3f;}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*************************************************各模块查询页统计样式************************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.stat{width:1000px;height:auto;margin:20px auto;}
+.stat_content{width:1000px;height:auto;border-top:1px solid #d4d4d4;margin-top:-3px;}
+.stat_content_top{width:auto;height:45px;background:#0077f1;line-height:45px;text-align:center;font-size:14px;padding:0px 20px;}
+.stat_content_top ul li{float:left;}
+.stat_content_top ul li a{display:block;width:auto;padding:0 10px;}
+.stat_select{background:#fff;padding:0 5px;}
+.stat_select a{color:#0077f1;}
+.stat_content_bottom{width:938px;height:auto;border:1px solid #d4d4d4;border-top:none;padding:30px;}
+.stat_tab{width:220px;border-bottom:1px solid #d4d4d4;float:left;}
+.stat_bt{width:100%;height:25px;background:#0077f1;text-align:center;font-size:14px;}
+.stat_nr{height:25px;background:#fafafa;color:#4b4b4b;}
+.stat_chart{color:#3f3f3f;float:right;margin-left:10px;padding:0px;}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/***************************************************信息录入页面样式*************************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+/*信息录入页面样式*/
+.save{width:1000px;height:auto;z-index:1;margin:0 auto;}
+#save{width:1170px;}
+.save_top{width:1000px;height:auto;background:url(../images/cx.png) no-repeat;font-size:22px;text-align:center;line-height:59px;position:relative;}
+.save_content{width:980px;height:auto;padding:17px 9px 17px 9px;border:1px solid #0077f1;font-size:15px;}
+.info_tab {margin-top:15px;}
+.info_tab td{height:56px;}
+.td_title{text-align:right; vertical-align:top;margin-right:5px;color:#134693;width:20%;white-space:nowrap;line-height: 26px;}
+.td_content{text-align:left; vertical-align:top; margin-left:5px; color:#FF6600;width:30%;line-height: 26px;}
+#td_title{text-align:right; vertical-align:top;margin-right:5px;color:#134693;width:300px;white-space:nowrap;}
+#td_content{text-align:left; vertical-align:top; margin-left:5px; color:#FF6600;width:700px;}
+.td_content a{color:#0033FF}
+
+/*方案信息录入页面样式*/
+#title{width:1000px;height:72px;text-align:center;font-size:21px; background:url(../images/title_bg.jpg) no-repeat;padding-top:18px;position:fixed;top:0;z-index:1;}
+.title{width:1170px;height:72px;text-align:center;font-size:21px; background:url(../images/title_bg1.jpg) repeat-x;padding-top:18px;}
+.save_left{width:165px;background-color:#2994FF;height:auto;border:0;padding:35px 0px 30px 0;float:left;position:fixed;top:90px;}
+.save_left_menu{width:165px;height:auto;}
+.save_left_menu ul li{width:165px;height:auto;padding:15px 0 15px 0px;font-size:14px;position:relative;}
+.save_left_menu ul li span{position:absolute;right:8px;top:22px;}
+.save_left_menu ul li img{margin:0 7px -5px 7px;}
+.save_right{width:830px;height:auto;float:right;position:relative;background:#ffffff; padding:0px;font-size:15px; /* margin-top:90px;margin-left:165px; */}
+.save_right_saveBtn{width:830px;padding-top:20px;text-align:center;}
+#CCkcdt{position:relative;top:-9px;*left:210px;*top:-31px;}
+.falrsaveText{width:206px;margin-top:2px;}
+.stButton{text-align: center;}
+.stButton input{padding: 0 5px;background: #0077f1;border: 1px solid #0077f1;margin:0 5px 5px;cursor: pointer;color:#fff;width: auto;*width:1; height:31px;line-height:20px;overflow: visible;}
+.stButton .inputClass{border: 1px solid #64ABF5;background:#64ABF5;}
+/*模式窗口信息录入页面样式*/
+.dialog_save{width:600px;height:auto;z-index:1;position:relative;margin:0 auto;margin-top:30px;}
+.dialog_save_top{width:600px;height:auto;background:url(../images/top_600.png) no-repeat;font-size:20px;text-align:left;padding-left:15px;}
+.dialog_save_content{width:580px;height:100%;padding:17px 9px 17px 9px;background-color:#f2f2f2;}
+.dialog_save_item{width:570px;margin:13px 0;height:40px;}
+.dialog_save_title{width:140px;float:left;color:#3f3f3f;font-size:15px;padding-top:2px;}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*****************************************************信息查看页面样式***********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+/*信息查看页面样式*/
+.info_content_top{width:auto;height:45px;background:#9D9D9D;line-height:45px;text-align:center;font-size:14px; margin-top:5px;}
+.info_content_top ul li{float:left;}
+.info_content_top ul li a{display:block;width:auto;padding:0 30px;}
+.info_select{background:#0077f1;}
+.info_item{width:100%;height:40px;line-height:40px;font-size:20px;color:#0077f1;position:relative;border-bottom:1px dashed #ccc; margin-bottom:10px}
+.info_item_hr{width:100%;height:1px;border:none;border-top:1px dashed #ccc;}
+
+/*方案信息查看页面样式*/
+.detail_left{width:150px;background-color:#2994FF;height:auto;border:0;padding:0px 15px 15px 0;float:left;}
+.detail_left_menu{height:auto;}
+.detail_left_menu ul li{width:165px;height:auto;padding:10px 0 10px 0px;font-size:17px;position:relative;}
+.detail_left_menu ul li:hover{background:#ff9325;}
+.detail_left_menu ul li img{margin:0 12px -5px 12px;}
+.detail_right{width:1000px;height:auto;float:right;position:relative;margin-top:0px;font-size:15px;}
+.detail_right_saveBtn{width:1000px;padding-top:20px;text-align:center;}
+.detail_left_menu_select{background:#ff9325;}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*****************************************************综合查询页面样式***********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+#comprehensive{height:700px;}
+.comprehensive{height:auto;background:url(../images/bg_6.png) repeat-x;}
+.zhzx_content{padding-bottom:100px;}
+.zhzx_content span{bottom:35px;right:44px;}
+.zhzx_content_t{margin:17px 0;}
+.zhtj_zdycxx_ul{clear:both;margin-left:20px;}
+.zhtj_zdycxx{float: left;width: 150px;}
+.radio{width:20px;height:20px;}
+.map_an{width:141px;height:40px;float:right;}
+.mapan{width:123px;height:35px;background:url(../images/bg_7.png) no-repeat;border:0;}
+.mapan1{width:123px;height:35px;background:url(../images/bg_8.png) no-repeat;border:0;}
+.map{width:998px;height:429px;border:1px solid #ccc;margin:0 auto;position:relative;}
+.map span{position:absolute;top:0;right:0;}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*****************************************************综合统计页面样式***********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.comprehensive_statistics{width:20%;padding-top:30px;float:left;}
+/*综合页面左侧菜单添加滚动条*/
+.comprehensive_left{width: 100%;overflow:hidden;height: 670px;}
+.comprehensive_left_top{width:100%;height:40px;background:#0077f1;padding-left:20px;font-size:18px;line-height:40px;}
+.comprehensive_left_top img{margin-bottom:-1px;}
+/*综合页面左侧菜单样式高度调节*/
+.comprehensive_left_con{width: 91%; height: 370px;padding:0px 10px 10px 10px;overflow: hidden; overflow-y: scroll;}
+.comprehensive_left_con span{margin-left:25px;}
+.comprehensive_left_con ul{width:auto;height:auto;margin:20px 0;}
+/* .comprehensive_left_con ul li a{font-size:16px;line-height:35px;color:#4b4b4b;background: url("../images/icon2.png") no-repeat;text-indent: 20px;display:inline-block;background-position:4px 11px;}
+ */
+ .comprehensive_left_con ul li a{font-size:16px;line-height:35px;color:#4b4b4b;}
+ 
+.comprehensive_left_con ul li a:hover{color:#0077f1;text-decoration:underline;}
+.comprehensive_left_con ul li ul{margin-left:10px;}
+.comprehensive_left_con ul li img{margin-right:5px;}
+/*修改右侧页面高度  */
+.comprehensive_right{width:80%;float:right;position:relative;background:#fff; margin-top:30px;}
+._right_tjt{width:100%;height:auto;position:relative;}
+.comprehensive_right_bd{width:100%;height:75px;}
+/* 滚动条写在css中不起作用，改为写到页面中 */
+.comprehensive_right_bg{border-left:1px solid #ccc; }
+._right_bg tbody tr:hover{background:#64abf5;border:1px solid #2d8ff3;color:#fff;}
+.comprehensive_right span{position:absolute;top:0;right:0;}
+.comprehensive_right_tjt span{position:absolute;left:0;top:0;}
+.comprehensive_stat_folder{background:url(../images/suofang_tb.png);width:20px;height:93px;border:0;}
+.comprehensive_stat_select{color:#0077f1;}
+.comprehensive_stat_checbox{font-size:16px;line-height:35px;color:#4b4b4b;}
+#zhtjSpan{position: absolute;left: 45px;bottom:40px;*bottom:20px;*left: 0px;}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*****************************************************更多页面样式***********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.more_pages{width:1000px;height:auto;margin:0 auto;padding-top: 50px;}
+.more_pages_l{width:235px;height:auto;float:left;}
+h1{font-size:20px;color:#006fbb;font-weight:normal;height:30px;padding-top:20px;}
+.more_pages a img{margin-top:2px;}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*****************************************************下拉框样式***********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.down-div{display: inline-block;width: 150px;text-align: right;padding-top:-5px;height:30px;line-height:30px;float:left;}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*****************************************************文本框前字的样式***********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.text-before{width: 150px;height:30px;line-height:30px;text-align: right;display: inline-block;float:left;}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*****************************************************全过程信息页面超出显示省略号***********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+	/* 小文本区域 */
+ .over_flow{width: 245px;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;}
+	/* 大文本区域 */
+.over_flow_textarea{width: 750px;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*****************************************************列表页面列表信息为空时的样式***********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+
+.list_td_snd{border:1px solid #d4d4d4;text-align:center;background-color: #fff;height: 50px;font-size:16px;}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*****************************************************上传下载地址提示消息框的样式***********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+#fileName{width:300px;overflow:hidden;height:28px;line-height:28px;}
+#fileName a{color:#FF6600;}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*****************************************************上传下载控件的样式***********************************************/
+/*----------------------------------------------------------------------------------------------------------------*/
+.fileUp{width: 260px;height: 28px;border:1px solid #0077f1;}
+.fileAddress{width: 200px;height: 26px;border:none;float: left;line-height: 26px;color:#000;background: #fff;}
+.fileUp .fileButton{display:inline-block;text-decoration:none;text-align:center;width: 40px;height: 26px;line-height: 26px;background: #0077f1;border: 1px solid #0077f1;float:right;color:#fff;}
+.fileUp .fileButton:hover{display:inline-block;text-decoration:none;text-align:center;width: 40px;height: 26px;line-height: 26px;background: #0077f1;border: 1px solid #0077f1;float:right;color:#fff;}
+/*****************项目全过程字体样式颜色修改*********************/
+.qgccolor{color: #FF6600;}

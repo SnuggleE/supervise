@@ -1,0 +1,29 @@
+<?php
+header("Content-Type:text/html;charset=UTF-8");
+?>
+
+<div class="header">
+	<div class="title">
+	<h2>全国水土保持监督管理系统V3.0</h2>
+	<div>用户名：</div><span class="username">王刚</span>
+	<button>退出</button>
+	<a class="button" href="#">修改密码</a>
+	</div>
+	<div class="menu">
+		<ul>
+		<li><a href="#">首页</a></li>
+		<li><a href="#">方案管理</a>
+			<ul>
+				<li><a href="#"></a></li>
+			</ul>
+		</li>
+		<li><a href="#">监督检查</a></li>
+		<li><a href="#">监理监测</a></li>
+		<li><a href="#">设施验收</a></li>
+		<li><a href="#">补偿费征收</a></li>
+		<li><a href="#">行政执法</a></li>
+		<li><a href="#">查询统计</a></li>
+		<li><a href="#">更多</a></li>
+	</ul>
+	</div>
+</div>
