@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src=" http://api.tianditu.com/api?v=4.0" type="text/javascript"></script>
+</head>
+<body>
+<div id="mapContainer" style="width: 800px;height: 800px">
+
+</div>
+<script>
+    var container=document.getElementById('mapContainer');
+    var map;
+    var zoom = 12;
+    function onLoad() {
+        map = new T.Map(container);
+        map.centerAndZoom(new T.LngLat(116.40769, 39.89945), zoom);
+        map.disableScrollWheelZoom();
+
+    }
+    onLoad();
+    console.log(map.getCode());
+    console.log(map.getBounds());
+    console.log(map.getLayers());
+
+</script>
+</body>
+</html>

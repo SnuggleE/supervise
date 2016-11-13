@@ -92,54 +92,60 @@
                         <span class="field-content">2022-06</span>
                     </div>
                     <div class="col-sm-12">
-                        <span style="width: 24%" class="field-name">项目规模：</span>
-                        <span class="field-content">change132.8km，四车道高速公路，路基宽度25.5m</span>
+                        <span  class="field-name">项目规模：</span>
+                        <span class="field-content">长320.8km，四车道高速公路，路基宽度25.5m</span>
                     </div>
                 </div>
             </div>
             <div class="pro-construct">
-                <p class="basic-title"><span class="glyphicon glyphicon-cloud"></span>项目组成</p>
-                <table class="pro-construct-table">
-                    <thead>
-                    <tr>
-                        <th>项目建成区</th>
-                        <th>长度（米）</th>
-                        <th>面积（公顷）</th>
-                        <th>挖方量（万立方米）</th>
-                        <th>填方量（万立方米）</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>隧道区</td>
-                        <td>692400</td>
-                        <td>14</td>
-                        <td>1325.7</td>
-                        <td>1.4</td>
-                    </tr>
-                    <tr>
-                        <td>隧道区</td>
-                        <td>692400</td>
-                        <td>14</td>
-                        <td>1325.7</td>
-                        <td>1.4</td>
-                    </tr>
-                    <tr>
-                        <td>隧道区</td>
-                        <td>692400</td>
-                        <td>14</td>
-                        <td>1325.7</td>
-                        <td>1.4</td>
-                    </tr>
-                    <tr>
-                        <td>隧道区</td>
-                        <td>692400</td>
-                        <td>14</td>
-                        <td>1325.7</td>
-                        <td>1.4</td>
-                    </tr>
-                    </tbody>
-                </table>
+            <p class="basic-title"><span class="glyphicon glyphicon-cloud"></span>项目组成</p>
+            <table class="pro-construct-table">
+                <thead>
+                <tr>
+                    <th>项目建成区</th>
+                    <th>长度（米）</th>
+                    <th>面积（公顷）</th>
+                    <th>挖方量（万立方米）</th>
+                    <th>填方量（万立方米）</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>隧道区</td>
+                    <td>692400</td>
+                    <td>14</td>
+                    <td>1325.7</td>
+                    <td>1.4</td>
+                </tr>
+                <tr>
+                    <td>隧道区</td>
+                    <td>692400</td>
+                    <td>14</td>
+                    <td>1325.7</td>
+                    <td>1.4</td>
+                </tr>
+                <tr>
+                    <td>隧道区</td>
+                    <td>692400</td>
+                    <td>14</td>
+                    <td>1325.7</td>
+                    <td>1.4</td>
+                </tr>
+                <tr>
+                    <td>隧道区</td>
+                    <td>692400</td>
+                    <td>14</td>
+                    <td>1325.7</td>
+                    <td>1.4</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+            <div class="pro-construct">
+                <p class="basic-title"><span class="glyphicon glyphicon-cloud"></span>上图</p>
+                <div style="width: 100%;height: 800px;" id="mapContainer">
+
+                </div>
             </div>
         </div>
     </div>
@@ -148,5 +154,16 @@
 
 <script src="js/jquery-1.11.3.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src=" http://api.tianditu.com/api?v=4.0" type="text/javascript"></script>
+
+<script>
+    var mapContainer=document.getElementById('mapContainer');
+    var map=null;
+    function loadMap(){
+        map=new T.Map(mapContainer);
+        map.centerAndZoom(new T.LngLat(102,38.9),5);
+    }
+    loadMap();
+</script>
 </body>
 </html>
