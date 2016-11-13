@@ -15,7 +15,6 @@ insert into sys_user values(null,'监测中心','5d93ceb70e2bf5daa84ec3d0cd2c731
 /*项目列表*/
 create table pro_list(
 pro_no int auto_increment primary key,#项目数字编号  自增数字
-pro_id varchar(32),#项目编号 32位唯一码
 pro_name varchar(200),#项目名称
 pro_builder varchar(32),#项目建设单位编号
 pro_schema varchar(32)#方案编号
@@ -23,7 +22,6 @@ pro_schema varchar(32)#方案编号
 #建设单位信息表
 create table builder_list(
 builder_no int auto_increment primary key,#项目数字编号  自增数字
-builder_id varchar(32),#项目编号 32位唯一码
 pro_name varchar(200),#项目名称
 pro_builder varchar(32),#项目建设单位编号
 pro_schema varchar(32)#方案编号

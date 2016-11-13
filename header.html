@@ -62,5 +62,18 @@
         </ul>
     </div>
 </div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    function headMenuInit(){
+        $('div.menu>ul>li>ul').css('display','none');
+        $('div.menu>ul').on('mouseenter','>li',function(){
+            $(this).children('ul').fadeIn('normal');
+        });
+        $('div.menu>ul').on('mouseleave','>li',function(){
+            $(this).children('ul').fadeOut('normal');
+        });
+    }
+    headMenuInit();
+</script>
 </body>
 </html>
