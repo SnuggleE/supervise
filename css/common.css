@@ -76,3 +76,13 @@ ul {
   display: block;
   clear: both;
 }
+p.bottom {
+  background: rgba(57, 137, 166, 0.8);
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+}

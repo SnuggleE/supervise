@@ -3,8 +3,8 @@
  */
 var wave=document.getElementById("wave");
 var ctx=wave.getContext("2d");
-var h=500;
-var w=innerWidth;
+var h=300;
+var w=innerWidth*0.7;
 wave.width=w;
 wave.height=h;
 var x=0;
@@ -39,7 +39,7 @@ var timer=setInterval(function(){
     ctx.fillStyle="white";
     ctx.font="32px 微软雅黑";
     var textWidth=ctx.measureText("欢迎进入全国水土保持监督管理系统！");
-    ctx.fillText("欢迎进入全国水土保持监督管理系统！",(w-textWidth.width)/2,300);
+    ctx.fillText("欢迎进入全国水土保持监督管理系统！",(w-textWidth.width)/2,150);
     right+=2;
     rise+=dir*0.2;
     v=-Math.pow(rise,2)+h/4;

@@ -8,41 +8,18 @@
     <title>全国水土保持监督管理系统</title>
 
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css"/>
 
 </head>
 <body>
-<div class="header">
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <h3 class="navbar-text">全国水土保持监督管理系统</h3>
-                <a class="navbar-toggle" data-toggle="collapse" href="#intel-menu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-            </div>
-                <ul></ul>
-                <a class="navbar-link navbar-text navbar-right" href="#">登录</a>
-                <a class="navbar-link navbar-text navbar-right" href="#">China(简体中文)</a>
-                <form class="navbar-form navbar-right">
-                    <div class="form-group">
-                        <label class="sr-only" for="kw">搜索关键字</label>
-                        <input class="form-control" placeholder="搜索" id="kw" type="text"/>
-                    </div>
-                </form>
-                <span class="navbar-text navbar-right">|</span>
-                <a class="navbar-text navbar-link navbar-right" href="#">查找内容</a>
-            </div>
-        </div>
-    </div>
+<div id="header">
 
 </div>
 <div class="main">
     <div class="container">
        <div class="row">
            <div class="col-xs-12">
-               <canvas id="wave"></canvas>
+               <canvas style="background: url("img/list_banner.png")" id="wave"></canvas>
            </div>
        </div>
         <div class="row">
@@ -50,20 +27,12 @@
         </div>
     </div>
 </div>
+<div id="footer"></div>
 <div class="footer"></div>
 <script src="js/wave.js"></script>
 <script src="js/jquery-1.11.3.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script>
-    /*使用bootlint检查代码函数*/
-    (function () {
-        var s = document.createElement("script");
-        s.onload = function () {
-            bootlint.showLintReportForCurrentDocument([]);
-        };
-        s.src = "js/bootlint.js";
-        document.body.appendChild(s)
-    })();
-</script>
+<script src="js/index.js"></script>
+
 </body>
 </html>
