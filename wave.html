@@ -12,6 +12,9 @@
 <body>
 <canvas id="wave"></canvas>
 <script>
+    var wave=document.getElementById("wave");
+    console.log(wave);
+    wave.width=innerWidth;
     var ctx=wave.getContext("2d");
     var h=300;
     var w=innerWidth;

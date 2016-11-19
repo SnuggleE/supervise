@@ -14,16 +14,16 @@ div.row{
     height: 80%;
 }
 p.bottom {
-    background: rgba(57,137,166,0.8);
-    width: 100%;
+     background: rgba(57,137,166,0.8);
+     width: 100%;
 
-    text-align: center;
-    padding:20px 0;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    margin:0;
-}
+     text-align: center;
+     padding:20px 0;
+     color: #fff;
+     position: fixed;
+     bottom: 0;
+     margin:0;
+ }
 .login{
     color: #fff;
     box-shadow: 0 0 20px  #000;

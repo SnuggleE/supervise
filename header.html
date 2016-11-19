@@ -67,10 +67,10 @@
     function headMenuInit(){
         $('div.menu>ul>li>ul').css('display','none');
         $('div.menu>ul').on('mouseenter','>li',function(){
-            $(this).children('ul').fadeIn('normal');
+            $(this).children('ul').css('display','block');
         });
         $('div.menu>ul').on('mouseleave','>li',function(){
-            $(this).children('ul').fadeOut('normal');
+            $(this).children('ul').css('display','none');
         });
     }
     headMenuInit();
