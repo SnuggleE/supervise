@@ -91,6 +91,10 @@ body{}
           li{
             width: 100%;
             padding: 0 25px;
+            a:hover{
+              background-color: #ff9427;
+            }
+
 
           }
           li:hover{
@@ -100,7 +104,7 @@ body{}
         }
       }
       :hover{
-        background: #005aa0;
+        background: #097cd0;
         a{
           color: white;
           text-decoration: none;
@@ -133,7 +137,7 @@ div#waterPicture{
   margin-top: 80px;
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 600px;
   background: #0282cd ;
 
   .bgPic{
@@ -141,19 +145,19 @@ div#waterPicture{
     left: 0;
     top: 0;
     width: 100%;
-    height: 300px;
+    height: 450px;
     z-index: 0;
     background: #0282cd url("../img/list_banner.png");
   }
   #wave{
     position: absolute;
     left: 0;
-    top: 0;
+    top: 150px;
     z-index: 1000;
   }
 }
 .main{
-  margin-top: -50px;
+  margin-top: -150px;
   .sub-title{
     width: 95%;
     margin-top: 20px;
@@ -170,6 +174,7 @@ div#waterPicture{
         background: #0091df;
         box-shadow: 0 0 5px #0282cd;
         border-radius: 5px;
+        text-decoration: none;
         span{
           display: block;
           padding: 5px;
@@ -187,13 +192,18 @@ div#waterPicture{
       }
       .more-content:hover{
         background: #ff9325;
+        text-decoration: none;
+
       }
     }
     ul{
       border-bottom: 1px solid #999;
-      color: #666;
+
       li{
         padding: 5px 0;
+        a{
+          color: #666;
+        }
         .date{
           float: right;
 
@@ -214,9 +224,22 @@ div#waterPicture{
     border-bottom: 1px solid #999999;
 
 
-  }
-}
 
+  }
+}.poster{
+   position: relative;
+   img{
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,50%);
+   }
+ }
+ .poster:after{
+   content: "";
+   display: block;
+   clear: both;
+ }
 
 
 
