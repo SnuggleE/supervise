@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--语言选项 -->
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>全国水土保持监督管理系统</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css"/>
+
+</head>
+<body>
+<div id="header"></div>
+<div class="search">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="bg-blue search-title">查询</h2>
+            </div>
+        </div>
+        <form id="search">
+            <div class="search-option">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <label>生产建设项目：</label>
+                <input type="text"/>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <label>项目编号：</label>
+                <input type="text"/>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <label>受理时间：</label>
+                <input type="date"/>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <label>项目建设单位：</label>
+                <input type="text"/>
+            </div>
+        </div>
+            </div>
+        </form>
+        <div class="button-group">
+            <button class="right  my-button bg-blue">重置</button>
+            <button class="right  my-button bg-yellow">添加</button>
+            <button class="right  my-button bg-yellow">查询</button>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+    <div class="pro-list">
+        <table class="table table-striped table-bordered">
+            <tbody>
+                <tr>
+                    <td style="color: white" class=" bg-blue text-center" colspan="5">
+                        <h2>方案受理</h2>
+                    </td>
+                </tr>
+            <tr  style="color: white" class="bg-blue">
+                <td>生产建设项目</td>
+                <td>项目编号</td>
+                <td>项目建设单位</td>
+                <td>受理时间</td>
+                <td>操作</td>
+            </tr>
+                <tr>
+                    <td>新疆叶尔羌河防洪工程</td>
+                    <td>00000015445145454</td>
+                    <td>新疆塔里木河流域管理局</td>
+                    <td>2016-08-01</td>
+                    <td>
+                        <a class="btn" href="#">
+                            <img src="img/xiugai.png"/>
+                            <span>修改</span>
+                        </a>
+                        <a class="btn" href="#">
+                            <img src="img/shanchu.png"/>
+                            <span>删除</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>新疆叶尔羌河防洪工程</td>
+                    <td>00000015445145454</td>
+                    <td>新疆塔里木河流域管理局</td>
+                    <td>2016-08-01</td>
+                    <td>
+                        <a class="btn" href="#">
+                            <img src="img/xiugai.png"/>
+                            <span>修改</span>
+                        </a>
+                        <a class="btn" href="#">
+                            <img src="img/shanchu.png"/>
+                            <span>删除</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>新疆叶尔羌河防洪工程</td>
+                    <td>00000015445145454</td>
+                    <td>新疆塔里木河流域管理局</td>
+                    <td>2016-08-01</td>
+                    <td>
+                        <a class="btn" href="#">
+                            <img src="img/xiugai.png"/>
+                            <span>修改</span>
+                        </a>
+                        <a class="btn" href="#">
+                            <img src="img/shanchu.png"/>
+                            <span>删除</span>
+                        </a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="footer"></div>
+<div class="footer"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fasl.js"></script>
+
+</body>
+</html>
